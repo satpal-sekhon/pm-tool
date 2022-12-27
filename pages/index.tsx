@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-export default function () {
+export default function Index() {
   return (
     <>
       <Head>
