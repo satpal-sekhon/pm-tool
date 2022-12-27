@@ -1,0 +1,17 @@
+.projectDetailContainer{
+   h2, h3{
+      margin-top: 0;
+   }
+   .projectDetails{
+      margin-bottom: 0;
+   }
+   .nameContainer{
+      display: flex;
+      padding: 0 16px;
+      align-items: center;
+      .name{
+         padding-left: 16px;
+      }
+   }
+   
+}

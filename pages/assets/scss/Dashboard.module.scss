@@ -1,0 +1,33 @@
+.widgetContainer {
+    display: flex;
+    align-items: center;
+
+    .widgetIcon {
+        background-color: #1976d2;
+        color: #fff;
+        font-size: 30px;
+        height: 60px;
+        line-height: 60px;
+        margin-right: 10px;
+        text-align: center;
+        width: 60px;
+        border-radius: 100%;
+    }
+
+    .widgetInfo {
+        text-align: right;
+        width: calc(100% - 70px);
+        color: #3e3e3e;
+
+        h3 {
+            margin-top: 0;
+            font-size: 30px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+}
