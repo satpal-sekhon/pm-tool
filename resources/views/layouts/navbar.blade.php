@@ -130,13 +130,13 @@
                             <span class="avatar avatar-online">
                                 <img src="{{ asset('assets/images/avatar-s-19.png') }}" alt="avatar"><i></i>
                             </span>
-                            <span class="mr-1 user-name text-bold-700">John Doe</span>
+                            <span class="mr-1 user-name text-bold-700">{{ Auth::user()->name }}</span>
 
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="#"> <i class="ft-user"></i> Edit Profile</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#"> <i class="ft-power"></i> Logout</a>
+                            <a class="dropdown-item" href="{{ route('user.logout') }}"> <i class="ft-power"></i> Logout</a>
                         </div>
                     </li>
                 </ul>

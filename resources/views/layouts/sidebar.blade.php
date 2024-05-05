@@ -43,12 +43,14 @@
                 </a>
             </li>
 
+            @can('edit project')
             <li class="nav-item">
                 <a href="">
                     <i class="la la-rocket"></i>
                     <span class="menu-title">Projects</span>
                 </a>
             </li>
+            @endcan
 
             
             <li class="navigation-header">
