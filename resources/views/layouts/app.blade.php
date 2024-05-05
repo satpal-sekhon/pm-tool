@@ -19,10 +19,9 @@
 </head>
 
 <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar" data-menu="vertical-menu-modern">
+    @include('layouts.components.navbar')
     
-    @include('layouts.navbar')
-    
-    @include('layouts.sidebar')
+    @include('layouts.components.sidebar')
     
     <div class="app-content content">
         <div class="content-overlay"></div>
