@@ -19,7 +19,7 @@
                 </a>
                 <ul class="menu-content">
                     <li>
-                        <a class="menu-item" href="#"><i></i>
+                        <a class="menu-item" href="{{ route('employees.index') }}"><i></i>
                             <span>All Employees</span>
                         </a>
                     </li>

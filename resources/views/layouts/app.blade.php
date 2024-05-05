@@ -8,6 +8,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/css/vendors.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/css/tables/datatable/datatables.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendors/css/ui/prism.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap-extended.min.css') }}">
@@ -16,6 +17,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vertical-menu-modern.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/palette-gradient.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+
+    @yield('head')
 </head>
 
 <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar" data-menu="vertical-menu-modern">
@@ -50,8 +53,13 @@
     <div class="drag-target"></div>
 
     <script src="{{ asset('assets/vendors/js/vendors.min.js') }}"></script>
+    <script src="{{ asset('assets/vendors/js/tables/datatable/datatables.min.js') }}"></script>
     <script src="{{ asset('assets/vendors/js/ui/prism.min.js') }}"></script>
     <script src="{{ asset('assets/js/app-menu.min.js') }}"></script>
     <script src="{{ asset('assets/js/app.min.js') }}"></script>
+
+    <script>
+        $(".data-table").DataTable()
+    </script>
 </body>
 </html>
