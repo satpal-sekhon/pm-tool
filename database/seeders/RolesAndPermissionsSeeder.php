@@ -16,14 +16,22 @@ class RolesAndPermissionsSeeder extends Seeder
         Permission::create(['name' => 'create project']);
         Permission::create(['name' => 'edit project']);
         Permission::create(['name' => 'delete project']);
+        Permission::create(['name' => 'create employee']);
+        Permission::create(['name' => 'edit employee']);
+        Permission::create(['name' => 'delete employee']);
+        Permission::create(['name' => 'create department']);
+        Permission::create(['name' => 'edit department']);
+        Permission::create(['name' => 'delete department']);
+        Permission::create(['name' => 'request asset']);
+        Permission::create(['name' => 'create job']);
+        Permission::create(['name' => 'edit job']);
+        Permission::create(['name' => 'delete job']);
         // create roles and assign created permissions
 
-        // this can be done as separate statements
-        $role = Role::create(['name' => 'admin']);
+        $role = Role::create(['name' => 'Admin']);
         $role->givePermissionTo(Permission::all());
 
-        // or may be done by chaining
-        $role = Role::create(['name' => 'project_manager'])
-            ->givePermissionTo(['create project', 'edit project', 'delete project']);
+        $role = Role::create(['name' => 'Project Manager']);
+        $role->givePermissionTo(['create project', 'edit project', 'delete project']);
     }
 }
