@@ -33,12 +33,14 @@
                             <span>Attendance</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="menu-item" href="#"><i></i>
-                            <span>Departments</span>
-                        </a>
-                    </li>
                 </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href="">
+                    <i class="la la-folder-open"></i>
+                    <span class="menu-title">Departments</span>
+                </a>
             </li>
 
             <li class="nav-item">
