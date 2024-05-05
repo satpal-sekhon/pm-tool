@@ -11,10 +11,8 @@ Route::middleware(['auth', 'auth.session'])->group(function () {
     ]);
 });
 
-
-
 Route::get('/', function () {
     return redirect()->route('dashboard.index');
 })->name('dashboard');
 
-require_once('auth.php');
+require __DIR__.'/auth.php';
