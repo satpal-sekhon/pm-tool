@@ -11,6 +11,7 @@
                 <x-input-checkbox name="remember_me" label="Remember Me"></x-input-checkbox>
             </div>
         </div>
+        
         <button type="submit" class="btn btn-outline-info btn-block">
             <i class="ft-unlock"></i> Login
         </button>

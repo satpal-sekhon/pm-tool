@@ -4,8 +4,17 @@
     @endphp
 @endif
 
+@if (empty($placeholder))
+    @php
+        $placeholder = '';
+    @endphp
+@endif
+
 <div class="form-group floating-label-form-group @error($name) error @enderror">
-    <label for="{{ $name }}">{{ $label }}</label>
+    @isset($label)
+        <label for="{{ $name }}">{{ $label }}</label>
+    @endisset
+    
     <input type="password" class="form-control" name="{{ $name }}" id="{{ $name }}"
         value="{{ old($name, $value) }}" placeholder="{{ $placeholder }}">
 
