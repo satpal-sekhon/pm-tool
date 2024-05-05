@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="loading">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>PM Tool</title>
+    <title>PM Tool | @yield('title')</title>
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i%7CQuicksand:300,400,500,700"
         rel="stylesheet">
@@ -23,23 +24,35 @@
 
 <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar" data-menu="vertical-menu-modern">
     @include('layouts.components.navbar')
-    
+
     @include('layouts.components.sidebar')
-    
+
     <div class="app-content content">
         <div class="content-overlay"></div>
         <div class="content-wrapper">
             <div class="content-header row">
                 <div class="content-header-left col-md-6 col-12 mb-2 breadcrumb-new">
-                    <h3 class="content-header-title mb-0 d-inline-block">Dashboard</h3>
+                    <h3 class="content-header-title mb-0 d-inline-block">@yield('title')</h3>
                     <div class="row breadcrumbs-top d-inline-block">
-                        <div class="breadcrumb-wrapper col-12">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item active">
-                                    Home
-                                </li>
-                            </ol>
-                        </div>
+                        @isset($breadcrumbs)
+                            <div class="breadcrumb-wrapper col-12">
+                                <ol class="breadcrumb">
+                                    @foreach ($breadcrumbs as $key => $breadcrumb)
+                                        @php
+                                            $active = count($breadcrumbs) == $key + 1;
+                                        @endphp
+
+                                        <li @class(['breadcrumb-item', 'active' => $active])>
+                                            @if ($active)
+                                                {{ $breadcrumb['label'] }}
+                                            @else
+                                                <a href="{{ $breadcrumb['url'] }}">{{ $breadcrumb['label'] }}</a>
+                                            @endif
+                                        </li>
+                                    @endforeach
+                                </ol>
+                            </div>
+                        @endisset
                     </div>
                 </div>
             </div>
@@ -62,4 +75,5 @@
         $(".data-table").DataTable()
     </script>
 </body>
+
 </html>

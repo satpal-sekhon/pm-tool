@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Employees')
 
 @section('head')
     <link rel="stylesheet" href="{{ asset('assets/css/users-list.min.css') }}">

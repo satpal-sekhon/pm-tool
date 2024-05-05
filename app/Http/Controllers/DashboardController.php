@@ -9,6 +9,10 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('dashboard');
+        $breadcrumbs = [
+            ['label' => 'Home', 'url' => route('dashboard')],
+        ];
+        
+        return view('dashboard', compact('breadcrumbs'));
     }
 }

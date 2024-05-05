@@ -12,7 +12,13 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        return view('employees.index');
+        $breadcrumbs = [
+            ['label' => 'Home', 'url' => route('dashboard')],
+            ['label' => 'Users', 'url' => route('employees.index')],
+            ['label' => 'Employees', 'url' => route('employees.index')],
+        ];
+
+        return view('employees.index', compact('breadcrumbs'));
     }
 
     /**
