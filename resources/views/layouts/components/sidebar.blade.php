@@ -12,7 +12,7 @@
                 <span>Employees</span>
             </li>
 
-            <li @class(['nav-item', 'menu-collapsed-open open' => Request::is('employees')])>
+            <li @class(['nav-item', 'menu-collapsed-open open' => Request::is('employees', 'leaves')])>
                 <a href="#">
                     <i class="la la-users"></i>
                     <span class="menu-title">Employees</span>
@@ -23,13 +23,13 @@
                             <span>All Employees</span>
                         </a>
                     </li>
-                    <li>
+                    <li @class(['active' => Request::is('leaves')])>
                         <a class="menu-item" href="{{ route('leaves.index') }}"><i></i>
                             <span>Leaves</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="menu-item" href="#"><i></i>
+                    <li @class(['active' => Request::is('attendance')])>
+                        <a class="menu-item" href="{{ route('attendance.index') }}"><i></i>
                             <span>Attendance</span>
                         </a>
                     </li>

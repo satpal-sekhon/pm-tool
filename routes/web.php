@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\LeaveController;
@@ -10,6 +11,7 @@ Route::middleware(['auth', 'auth.session'])->group(function () {
         '/dashboard' => DashboardController::class,
         '/employees' => EmployeeController::class,
         '/leaves' => LeaveController::class,
+        '/attendance' => AttendanceController::class,
     ]);
 });
 

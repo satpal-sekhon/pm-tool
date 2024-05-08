@@ -30,37 +30,41 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Employee ID</th>
-                                        <th>Name</th>
-                                        <th>Last Activity</th>
-                                        <th>Verified</th>
-                                        <th>Role</th>
+                                        <th>Employee</th>
+                                        <th>Leave Type</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Reason</th>
                                         <th>Status</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>300</td>
-                                        <td><a href="#">dean3004</a>
+                                        <td>1</td>
+                                        <td><a href="#">Satpal Singh</a></td>
+                                        <td>Medical Leave</td>
+                                        <td>15 Jan 2024</td>
+                                        <td>25 Jan 2024</td>
+                                        <td>Going to Hospital</td>
+                                        <td><span class="badge badge-success">Approved</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-primary"><i class="ft-edit-1"></i></a>
+                                            <a href="#" class="btn btn-sm btn-danger"><i class="ft-trash"></i></a>
                                         </td>
-                                        <td>Dean Stanley</td>
-                                        <td>30/04/2019</td>
-                                        <td>No</td>
-                                        <td>Staff</td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td><a href="#"><i class="ft-edit-1"></i></a></td>
                                     </tr>
                                     <tr>
-                                        <td>301</td>
-                                        <td><a href="#">zena0604</a>
+                                        <td>2</td>
+                                        <td><a href="#">Satwinder Singh</a></td>
+                                        <td>Hospitalisation</td>
+                                        <td>15 Jan 2024</td>
+                                        <td>25 Jan 2024</td>
+                                        <td>Personnal</td>
+                                        <td><span class="badge badge-success">Approved</span></td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-primary"><i class="ft-edit-1"></i></a>
+                                            <a href="#" class="btn btn-sm btn-danger"><i class="ft-trash"></i></a>
                                         </td>
-                                        <td>Zena Buckley</td>
-                                        <td>06/04/2020</td>
-                                        <td>Yes</td>
-                                        <td>User </td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td><a href="#"><i class="ft-edit-1"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>

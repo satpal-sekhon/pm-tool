@@ -71,7 +71,10 @@
                                         <td>No</td>
                                         <td>Staff</td>
                                         <td><span class="badge badge-success">Active</span></td>
-                                        <td><a href="#"><i class="ft-edit-1"></i></a></td>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-primary"><i class="ft-edit-1"></i></a>
+                                            <a href="#" class="btn btn-sm btn-danger"><i class="ft-trash"></i></a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>301</td>
@@ -82,18 +85,10 @@
                                         <td>Yes</td>
                                         <td>User </td>
                                         <td><span class="badge badge-success">Active</span></td>
-                                        <td><a href="#"><i class="ft-edit-1"></i></a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>302</td>
-                                        <td><a href="#">delilah0301</a>
+                                        <td>
+                                            <a href="#" class="btn btn-sm btn-primary"><i class="ft-edit-1"></i></a>
+                                            <a href="#" class="btn btn-sm btn-danger"><i class="ft-trash"></i></a>
                                         </td>
-                                        <td>Delilah Moon</td>
-                                        <td>03/01/2020</td>
-                                        <td>Yes</td>
-                                        <td>User </td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td><a href="#"><i class="ft-edit-1"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
