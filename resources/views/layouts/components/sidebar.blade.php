@@ -24,7 +24,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="menu-item" href="#"><i></i>
+                        <a class="menu-item" href="{{ route('leaves.index') }}"><i></i>
                             <span>Leaves</span>
                         </a>
                     </li>
