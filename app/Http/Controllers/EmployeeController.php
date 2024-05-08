@@ -14,7 +14,6 @@ class EmployeeController extends Controller
     {
         $breadcrumbs = [
             ['label' => 'Home', 'url' => route('dashboard')],
-            ['label' => 'Users', 'url' => route('employees.index')],
             ['label' => 'Employees', 'url' => route('employees.index')],
         ];
 
